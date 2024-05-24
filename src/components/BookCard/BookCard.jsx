@@ -7,9 +7,9 @@ const BookCard = ({ allBookCard }) => {
     return (
         <div className="border rounded-xl p-6">
             <img className="border rounded-xl" src={image} alt="" />
-            <div className="flex flex-row justify-around">
-                <button>Young Adult</button>
-                <button>Identity</button>
+            <div className="flex flex-row justify-around mt-6 mb-4">
+                <button className='border-2 text-[#23BA0A] bg-transparent px-4 py-2 rounded-xl'>Young Adult</button>
+                <button className='border-2 text-[#23BA0A] bg-transparent px-4 py-2 rounded-xl '>Identity</button>
             </div>
             <h3 className='pt-2 pb-2 text-xl font-bold'>{bookName}</h3>
             <p className='text-lg font-semibold pb-4'>By: {author}</p>
