@@ -8,7 +8,6 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
 import SingleBookDetails from './components/SingleBookDetails/SingleBookDetails';
-// import About from './components/About/About';
 
 const router = createBrowserRouter([
   {
@@ -29,8 +28,9 @@ const router = createBrowserRouter([
       element: <PagesToRead></PagesToRead>,
     },
     {
-      path: 'books/:bookId',
-      loader: ({params}) => <SingleBookDetails params={params}></SingleBookDetails>
+      path: '/book/:bookId',
+      element: <SingleBookDetails></SingleBookDetails>,
+      loader: () => fetch('booksdata.json'),
     }
     ],
   },

@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import { CiStar } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 
 const BookCard = ({ allBookCard }) => {
-   const {bookName, image, author, category, rating, tags} = allBookCard;
+   const {bookId, bookName, image, author, category, rating, tags} = allBookCard;
+
     return (
+        <Link to={`/book/${bookId}`}>
         <div className="border rounded-xl p-6">
             <img className="border rounded-xl" src={image} alt="" />
             <div className="flex flex-row justify-around mt-6 mb-4">
@@ -27,6 +30,7 @@ const BookCard = ({ allBookCard }) => {
 
             {/* <button onClick={()=> handleCookingInfos(recipe)} className='mt-6 text-md sm:text-md font-semibold px-4 sm:px-6 py-3 sm:py-3 border rounded-full bg-[#0BE58A] hover:text-black'>Want to Cook</button> */}
         </div>
+        </Link>
     );
 };
 
