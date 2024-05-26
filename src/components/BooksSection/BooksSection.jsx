@@ -1,8 +1,15 @@
-import { useLoaderData } from "react-router-dom";
 import BookCard from "../BookCard/BookCard";
+import { useEffect, useState } from "react";
 
 const BooksSection = () => {
-    const allBooksCard = useLoaderData();
+    const [allBooksCard, setallBooksCard] = useState([]);
+
+    useEffect(()=> {
+        fetch('booksdata.json')
+        .then(res => res.json())
+        .then(data => setallBooksCard(data))
+    },[])
+
     return (
         <div className="container mx-auto mt-32 mb-20 sm:mb-28">
             <h1 className="text-center text-4xl font-bold underline">Books</h1>
