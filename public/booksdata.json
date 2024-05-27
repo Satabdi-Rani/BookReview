@@ -1,6 +1,6 @@
 [
     {
-      "bookId": "1",
+      "bookId": 1,
       "bookName": "The Silent Patient",
       "author": "Alex Michaelides",
       "image": "https://i.ibb.co/52RKsDf/top-view-pile-books.jpg",
@@ -13,7 +13,7 @@
       "yearOfPublishing": 2019
     },
     {
-      "bookId": "2",
+      "bookId": 2,
       "bookName": "Educated",
       "author": "Tara Westover",
       "image": "https://i.ibb.co/VTd65p6/books-assortment-with-dark-background.jpg",
@@ -26,7 +26,7 @@
       "yearOfPublishing": 2018
     },
     {
-      "bookId": "3",
+      "bookId": 3,
       "bookName": "Where the Crawdads Sing",
       "author": "Delia Owens",
       "image": "https://i.ibb.co/kJqMb74/realistic-closed-book-white-background.jpg",
@@ -39,7 +39,7 @@
       "yearOfPublishing": 2018
     },
     {
-      "bookId": "4",
+      "bookId": 4,
       "bookName": "Becoming",
       "author": "Michelle Obama",
       "image": "https://i.ibb.co/r56jfRW/book-wooden-table-top-view.jpg",
@@ -52,7 +52,7 @@
       "yearOfPublishing": 2018
     },
     {
-      "bookId": "5",
+      "bookId": 5,
       "bookName": "The Subtle Art ",
       "author": "Mark Manson",
       "image": "https://i.ibb.co/FJ0dm49/top-view-open-closed-books.jpg",
@@ -65,7 +65,7 @@
       "yearOfPublishing": 2016
     },
     {
-      "bookId": "6",
+      "bookId": 6,
       "bookName": "The Testaments",
       "author": "Margaret Atwood",
       "image": "https://i.ibb.co/wLfjrPm/stack-black-notebooks.jpg",

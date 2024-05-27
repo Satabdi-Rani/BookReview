@@ -6,7 +6,7 @@ const BooksSection = () => {
     const [allBooksCard, setallBooksCard] = useState([]);
 
     useEffect(()=> {
-        fetch('booksdata.json')
+        fetch('./booksdata.json')
         .then(res => res.json())
         .then(data => setallBooksCard(data))
     },[])

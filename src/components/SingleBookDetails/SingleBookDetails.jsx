@@ -3,8 +3,11 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 const SingleBookDetails = () => {
     const books = useLoaderData();
     const {bookId} = useParams();
-    const book = books.find(book => book.id = bookId);
-    // console.log(books, bookId)
+    
+    const bookIdInt = parseInt(bookId);
+    const book = books.find(book => book.bookId == bookIdInt);
+    console.log(books, bookId)
+    console.log(book)
     return (
         <div className="mt-16 sm:mb-20">
             <div className="container mx-auto grid sm:grid-cols-2">
