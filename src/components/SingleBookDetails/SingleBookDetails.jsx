@@ -9,19 +9,19 @@ const SingleBookDetails = () => {
     console.log(books, bookId)
     console.log(book)
     return (
-        <div className="mt-16 sm:mb-20">
-            <div className="container mx-auto grid sm:grid-cols-2">
+        <div className="container mx-auto mt-16 mb-10 sm:mb-20">
+            <div className="px-8 sm:px-12 grid sm:grid-cols-2">
                <div>
                     <img className="border rounded-2xl " src={book.image} alt="" />
                </div>
 
-               <div className="ml-16">
-                  <h1 className="text-5xl font-bold">{book.bookName}</h1>
-                  <h4 className="font-semibold text-2xl py-6">By: {book.author}</h4>
+               <div className="sm:ml-16">
+                  <h1 className="mt-6 sm:mt-0 text-2xl sm:text-5xl font-bold">{book.bookName}</h1>
+                  <h4 className="font-semibold text-lg sm:text-2xl py-4 sm:py-6">By: {book.author}</h4>
                   <hr className="border"/>
-                  <p className="text-2xl font-semibold py-4">{book.category}</p>
+                  <p className="text-lg sm:text-2xl font-semibold py-4">{book.category}</p>
                   <hr className="border" />
-                  <p className="text-lg py-6"><b>Review: </b>{book.review}</p>
+                  <p className="text-md sm:text-lg py-6"><b>Review: </b>{book.review}</p>
                   <p className="flex flex-row pb-6 font-bold">Tag: 
                     {
                         book.tags.map((tag, idx)=> <li key={idx} className='border-2 text-[#23BA0A] bg-transparent px-4 py-2 rounded-xl list-none ml-4 '><span>#</span>{tag}</li> )
@@ -30,7 +30,7 @@ const SingleBookDetails = () => {
                   </p>
                   <hr />
 
-                  <div className="flex flex-row py-6 text-lg leading-loose">
+                  <div className="flex flex-row py-6 text-md sm:text-lg leading-loose">
                     <ul>
                         <li>Number of Pages:</li>
                         <li>Publisher:</li>
