@@ -15,6 +15,8 @@ const Header = () => {
                                 <li><NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>Home</NavLink></li>
                                 <li><NavLink to="/listedbooks" className={({ isActive }) => isActive ? 'active-link' : ''}>Listed Books</NavLink> </li>
                                 <li><NavLink to="/pagestoread" className={({ isActive }) => isActive ? 'active-link' : ''}> Pages to Read</NavLink> </li>
+                                <li><NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active-link' : ''}> About Us</NavLink> </li>
+                                <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active-link' : ''}> Contact</NavLink> </li>
                             </ul>
                         </div>
                         <h1 className="text-4xl font-bold">Book Vibe</h1>
@@ -24,6 +26,8 @@ const Header = () => {
                             <li><NavLink to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>Home</NavLink></li>
                             <li><NavLink to="/listedbooks" className={({ isActive }) => isActive ? 'active-link' : ''}>Listed Books</NavLink> </li>
                             <li><NavLink to="/pagestoread" className={({ isActive }) => isActive ? 'active-link' : ''}> Pages to Read</NavLink> </li>
+                            <li><NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active-link' : ''}> About Us</NavLink> </li>
+                            <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active-link' : ''}> Contact</NavLink> </li>
                         </ul>
                     </div>
                     <div className="flex flex-row gap-4 navbar-end">
